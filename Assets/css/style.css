@@ -48,8 +48,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 7rem;
-    /* background-color: black;*/
+    height: 7rem;    
     background: linear-gradient(to left, #f46b45, #e29d3d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
@@ -172,7 +171,6 @@ nav {
     }
 }
 
-
 #contactanos {
     /*position: absolute; top: 0%; right:0%;*/
     content: none;
@@ -181,7 +179,6 @@ nav {
     padding-top: 20px;
     background-color: transparent;
 }
-
 
 .menu a {
     text-decoration: none;
@@ -229,7 +226,7 @@ section .lugares {
 
 h2 {
     font-family: "Montserrat";
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 2rem;
     margin-bottom: 1rem;
     margin-top: 4rem;
@@ -550,7 +547,7 @@ div .foot {
 
 @media screen and (max-width:767px) {
 
-    p .Jujuy {
+    p.Jujuy {
         font-size: 2.3rem;
         left: 10%;
     }
@@ -584,11 +581,26 @@ max-height: 8rem;
 
 @media screen and (min-width: 400px) and (max-width: 720) {
 
-    p .Jujuy {
+    p.Jujuy {
         font-size: auto;
         text-align: center;
-        white-space: nowrap;
         margin-top: 10rem;
+    }
+
+    h2 {
+        font-family: "Montserrat";
+        font-size: 1.7rem;
+        font-weight: 1.7rem;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 0.5em;
+        text-align: center;
+        margin-top: 2rem;
     }
 
 }
@@ -649,6 +661,3 @@ max-height: 8rem;
     margin: 3rem; /* Márgenes de 3rem de todos lados */
     padding: 2rem; /* Relleno de 2rem de todos lados */
   }
-
-
-
