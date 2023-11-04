@@ -120,57 +120,6 @@ nav {
 }
 
 
-@media (max-width: 992px) {
-    .menu-button-container {
-        display: flex;
-    }
-
-    .menu {
-        position: absolute;
-        top: 2rem;
-        margin-top: 5rem;
-        left: 50%;
-        flex-direction: column;
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999 !important;
-    }
-
-    #menu-toggle~.menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    #menu-toggle:checked~.menu li {
-        display: block;
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5rem;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .menu>li {
-        display: flex;
-        justify-content: left;
-        margin: 2em;
-        padding: 0.5em 0;
-        width: 100%;
-        background-color: #0e0e0e;
-    }
-
-    .menu>li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
-
-    .Jujuy {
-        position: static;
-    }
-}
-
 #contactanos {
     /*position: absolute; top: 0%; right:0%;*/
     content: none;
@@ -540,12 +489,59 @@ div .foot {
     justify-content: center;
 }
 
-.redes-container ul {
-    display: flex;
+
+@media (max-width: 992px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 2rem;
+        margin-top: 5rem;
+        left: 50%;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999 !important;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        display: block;
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5rem;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: left;
+        margin: 2em;
+        padding: 0.5em 0;
+        width: 100%;
+        background-color: #0e0e0e;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    .Jujuy {
+        position: static;
+    }
 }
 
-
-@media screen and (max-width:767px) {
+@media screen and (max-width:721px) {
 
     p.Jujuy {
         font-size: 2.3rem;
@@ -579,14 +575,14 @@ max-height: 8rem;
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 720) {
+@media screen and (min-width: 426px) and (max-width: 720) {
 
     p.Jujuy {
         font-size: auto;
         text-align: center;
         margin-top: 10rem;
     }
-
+    /*
     h2 {
         font-family: "Montserrat";
         font-size: 1.7rem;
@@ -601,9 +597,85 @@ max-height: 8rem;
         font-weight: 0.5em;
         text-align: center;
         margin-top: 2rem;
-    }
+    }*/
 
 }
+
+@media screen and (max-width: 425px) {
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 0.5em;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: 10vh;
+        margin-top: 5rem;
+        left: 50%;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999 !important;
+    }
+
+    #sponsors{
+        font-size: 1.5rem;
+        background-color: #f8f8f8;
+        color:#181818;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem; 
+        padding-top: 1rem; 
+        padding-bottom: 0em; 
+        margin-bottom: 1em; 
+    }
+
+    .infored{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo {
+        padding: 1rem;
+        background-size: cover;
+        image-rendering: auto;
+        height: fit-content;
+    }
+    .redes-container {
+        display: block;
+        text-align: center;
+    }
+    .Jujuy{
+        min-height: 50vh;
+    }
+    p.Jujuy {
+        font-size: auto;
+        text-align: center;
+    }
+    #contact{
+        font-weight: bolder;
+    }
+    h2 {
+        background-color: #f8f8f8;
+        font-family: "Montserrat";
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 1.7rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+    
+    }
+
 
 /*Tarjetas*/
 
